@@ -1,0 +1,19 @@
+package com.loops;
+
+public class DoWhile {
+	public static void main(String[] args) {
+		/*
+		 // do while  
+		  * Do while loop adalah perulangan yang mirip dengan while loop
+		  * perbedaanya hanya berbeda di pengecekan kondisi
+		  * pengecekan while loop dilakukan di awal sebelum perulangan di lakukan dilakukan
+		  * sedangakan untuk di do while loop pengecekan kondisi dilakukan setelah melakukan perulangan 
+		  * oleh karena itu didalam do while loop, minimal pasti perulangan dilakukan walaupun kondisnya tidak bernilai true 
+		  */
+		int j = 100 ;
+		do {
+			System.out.println("in mah nyoba dulu" + j);
+			j++;
+		} while(j <= 10);
+	}
+}

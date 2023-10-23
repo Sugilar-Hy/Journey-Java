@@ -1,0 +1,11 @@
+package com.tutorial ;
+
+public class TipeDataArray {
+	public static void main(String[] args) {
+		/*
+		 // tipe data array (larik)
+		  * array merupakan sekumpulan data dengan tipe yang sama 
+		  * Jumlah data array di java tidak bisa berubah setelah pertama kali dibuat 
+		 * */
+	}
+}

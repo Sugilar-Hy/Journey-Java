@@ -1,0 +1,12 @@
+package com.oop;
+
+public class Constructor {
+	String merk ;
+	String brand; 
+	
+	Constructor(String paraMerk, String paraBrand){
+		merk = paraMerk ;
+		brand = paraBrand ;
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.oop;
+
+public class MethodClass {
+	String name ;
+	int age ;
+	
+	void notif(String fullName) {
+		System.out.println("Hallo, " + fullName + " my name is " + name + "Now i am " + age + " year ago");
+	}
+}

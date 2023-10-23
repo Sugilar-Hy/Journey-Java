@@ -1,0 +1,13 @@
+class Person {
+	/*
+		// class
+		 * membuat class kita bisa menggunakan kata kunci class
+		 * pernamaan class menggunakan format CamelCase
+	 * */
+	
+	/*
+	  // object 
+	   * object adalah intansiasi dari sebuah class
+	   * untuk membuat object kita bisa menggunakan kata kunci new, diikuti dengan nama Class dan kurung()
+	 * */
+}

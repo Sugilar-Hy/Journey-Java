@@ -1,0 +1,34 @@
+package com.tutorial;
+
+public class MethodFunction {
+	public static void main(String[] args) {
+		/*
+		 	// method atau function
+		 	 * method adalah blok kode program yang akan berjalan saat dipaanggil 
+		 	 * sebelumnya kita sudah menggunakan method prinln() untuk menampilkan tulisan diconsole
+		 	 * untuk membuat method di java, kita bisa menggunakan kata kunci void,lalu diikuti dengan methodnya,
+		 	 * kurung(), dan diakhiri dengan blok
+		 	 * memanggil method cukup dengan menggunakan nama methodnya lalu diikuti dengan ()
+		 * */
+		
+		sayToMe();
+		nameArray();
+		
+	}
+	
+	static void sayToMe() {
+		System.out.println("Halo semua");
+	}
+	
+	static void nameArray() {
+		String[] name = new String[] {
+			"Sugilar", "Hilma", "Siti",
+			"Dori", "Angga", "Heliab"
+		};
+		
+		for(String pName : name) {
+			System.out.println(pName);
+		}
+		
+	}
+}

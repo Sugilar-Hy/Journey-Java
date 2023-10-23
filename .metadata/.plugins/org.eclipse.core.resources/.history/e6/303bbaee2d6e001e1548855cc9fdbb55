@@ -1,0 +1,24 @@
+package oop.latihan;
+
+public class Motorcycle {
+	// this is for a class and a constructor or method
+	String merk ;
+	String brand ;
+	String color ;
+	
+	Motorcycle(String paraMerk, String paraBRand, String paraColor){
+		merk = paraMerk ;
+		brand = paraBRand ;
+		color = paraColor ;		
+	}
+	
+	public static void main(String[] args) {
+		
+		Motorcycle value = new Motorcycle("Honda street", "Honda", "red");
+		
+		System.out.println("Hallo sahabat honda kami memiliki merk terbar dengan nama " + value.merk + " dengan brand ternama " +  value.brand + ". kami disini memiliki warna " + value.color );
+		
+		
+	}
+	
+}

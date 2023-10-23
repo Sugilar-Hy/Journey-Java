@@ -1,0 +1,18 @@
+package com.tutorial;
+
+public class Scope {
+	public static void main(String[] args) {
+		
+	}
+	
+	static void sayHello(String name){
+		String hello = "Hello, " + name + "Di kawasan indah kami";
+		
+		if(!name.isBlank()) {
+			String hi = "Hi " + name + " aku akan membantumu";
+			System.out.println(hi);
+		}
+		
+		System.out.println(hello);
+	}
+}

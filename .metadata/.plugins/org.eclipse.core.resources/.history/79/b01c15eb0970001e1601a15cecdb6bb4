@@ -1,0 +1,82 @@
+public class ToDoListApp {
+	
+	public static String[] model = new String[20];
+	
+	public static void main(String[] args) {
+		testshowToDoList();
+	
+	}
+	
+	
+	// menentukan businuss logic dengan method
+	// show the list to do list
+	public static void showToDoList() {
+		for(int i = 0 ; i < model.length ; i++) {
+			String todo = model[i];
+			int no = i + 1;
+			
+			if (todo != null) {
+				System.out.println(no + ". " + todo);
+			}
+		}
+	}
+	
+	// Test method showToDoList
+	public static void testshowToDoList() {
+		model[0] = "Bangun pagi";
+		model[1] = "Baca buku";
+		model[2] = "Makan";
+		model[3] = "Mandi pagi";
+		showToDoList();
+	}
+	
+	// menambahkan logic penambahan list 
+	public static void addTodoList(String todo) {
+		// cek apakah model penuh 
+		boolean isFull = true ;
+		for(int i = 0 ; i < model.length ; i++) {
+			// model masih ada yang kosong 
+			isFull = false ;
+			break;
+		}
+		
+		// jika penuh kita resize 2 kali lipat
+		if(isFull) {
+			String[] temp = model ;
+			
+			for(int i = 0 ; i < temp.length ; i++) {
+				model[i] = temp[i];
+			}
+		}
+		
+		// fitur menambahkan list
+		for(int i = 0 ; i < model.length ; i++) {
+			if(model[i] == null) {
+				model[i] = todo;
+			}
+		}
+	}
+	
+	// menghapus list to do list
+	public static void rmToDoList() {
+		
+	}
+	
+	
+	// view 
+	// menampilkan view to do list
+	public static void viewToDoList(){
+	
+	}
+	
+	// menampikan view tampbah to do list 
+	public static void viewAddToDoList(){
+		
+	}
+	
+	// menampilkan view remove
+	public static void viewRmToDoList() {
+		
+	}
+	
+}

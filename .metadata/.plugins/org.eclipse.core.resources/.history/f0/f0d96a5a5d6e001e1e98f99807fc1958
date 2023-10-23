@@ -1,0 +1,18 @@
+package com.oop;
+
+public class MethodClass {
+	String name ;
+	int age ;
+	
+	void notif(String fullName) {
+		System.out.println("Hallo, " + fullName + " my name is " + name + " Now i am " + age + " year ago");
+	}
+	
+	void waring(int num) {
+		for(int i = 0 ; i <= num ; i++) {
+			System.out.println("Hallo " + name + i);
+		}
+		
+	}
+}
+

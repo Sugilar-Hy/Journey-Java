@@ -1,0 +1,29 @@
+package com.oop;
+
+public class VariablShadowing {
+	
+	/*
+	 // Varibale shadowing
+	  1. variable shadowing adalah kejadian ketika kita membuat nama variable dengan nama yang sama
+	  	variable dengan nama sayang sama discope diatasnya 
+	  2. ini biasa terjadi disaat kita membuat nama parameter di method sama dengan nama field di class 
+	  3. saat terjadi varible shadowing, maka secara otomatis variable di scope atasnya tidak bisa di akses  	 
+	 */
+	
+	// field 
+	String car ;
+	String brand ;
+	
+	void sayCar(String car, String brand) { // parameter disini menumpuk field 
+		car = car ; // field car tidak berubah 
+		brand = brand ; // field brand tidak berubah
+	}
+	
+	public static void main(String[] args) {
+		VariablShadowing kendaraan = new VariablShadowing();
+		kendaraan.sayCar("Agya", "Suzuki");
+		
+		System.out.println(kendaraan.sayCar);
+	}
+	
+}

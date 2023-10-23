@@ -1,0 +1,49 @@
+package com.tutorial ;
+
+public class TipeDataArray {
+	public static void main(String[] args) {
+		/*
+		 // tipe data array (larik)
+		  * array merupakan sekumpulan data dengan tipe yang sama 
+		  * Jumlah data array di java tidak bisa berubah setelah pertama kali dibuat 
+		 * */
+		
+		String[] arrayString ; // String[] mengdeklarasikan ini merupakan string array
+		arrayString = new String[10]; // String[10] adalah tempat menginitialize berapa banyak array
+		arrayString[0] = "Hilma fatmawati" ;
+		arrayString[1] = "Muhamad ardi sugilar";
+		arrayString[2] = "Rahardian";
+		
+		System.out.println(arrayString[2]);
+		
+		int[] myInt ;
+		myInt = new int[5];
+		myInt[0] = 100;
+		myInt[1] = 50 ;
+		myInt[2] = 60;
+		myInt[3] = 70 ;
+		myInt[4] = 90; 
+		
+		System.out.println(myInt[4]);
+		
+		char[] myChar = new char[2]; // inisialisasi
+		myChar[0] = 'A';
+		myChar[1] = 'B';
+		
+		System.out.println(myChar);
+
+		// array initialize 
+		
+		int[] arrayInt = new int[] {
+			90, 90, 86, 43, 45, 65, 12, 43
+		};
+		
+		System.out.println(arrayInt.length);
+		
+		float[] arrayFloat = { 
+			35.43f, 54.3f, 45.45f, 53.543f, 43.54f, 54.45f
+		};
+		
+		System.out.println(arrayFloat.length);
+	}
+}

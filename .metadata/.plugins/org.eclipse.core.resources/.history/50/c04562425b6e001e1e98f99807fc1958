@@ -1,0 +1,5 @@
+package com.inheritence;
+
+public class viceManager extends Manager { // class child from class parent Manager 
+
+}

@@ -1,0 +1,47 @@
+package com.methodFunction;
+
+public class recursiveMethod {
+	public static void main(String[] args) {
+		/*
+		  // recursive method 
+		   1. recursive method adalah kemampun memanggil dirinya sendiri
+		   2. kadang memang banyak problem, yang mudah diselesaikan menggunakan recursive method, seperti kasus factorial
+		 * */
+		
+		System.out.println(factorial(10));
+		
+		int wadah = factorialloop(5);
+		System.out.println(wadah);
+		
+		// recursive method 
+		
+		System.out.println(factorialRecursive(6););
+	}
+	
+	// menggunakn loop
+	static int factorial(int nilai) {
+		int result = 1;
+		for(int i = 1 ; i <= nilai ; i++) {
+			result*=i;
+		}
+		return result;
+	}
+	
+	static int factorialloop(int value) {
+		int hasil = 1;
+		for(int j = 1 ; j <= value ; j++) {
+			hasil = hasil * j;
+		}
+		return hasil;
+	}
+	
+	// recursive method 
+	static int factorialRecursive(int value) {
+		if(value == 1) {
+			return 1;
+		} else {
+			return value * factorialRecursive(value - 1);
+		}
+	}
+	
+}

@@ -1,0 +1,37 @@
+package com.loops;
+
+public class ForEach {
+	public static void main(String[] args) {
+		/*
+		 	// for Each 
+		 	 * kadang kita bisa mengakses data array megguunkan loop
+		 	 * mengakses data  array menggunakan loop sangat bertele tele, kita harus membuat counternya
+		 	 * lalu mengakses array menggunakan counter yang kiat buat
+		 	 * namun untungnya di java terdapat perulangan each, yang bisa digunakan untuk mengakses 
+		 	 * seluruh data di array 
+		 	 
+		 	 
+		 	 for(type varivaleanme : array){
+		 	 	// block execute code
+		 	 }
+		*/
+		
+		// mengambil data menggunakan for 
+		
+		String[] PersonName = new String [] {
+			"Bagas", "Azis", "Sugilar", 
+			"Ardi", "Ragis", "Sell"
+		};
+		
+		for(int i = 0 ; i < PersonName.length; i++) {
+			System.out.println(PersonName [i]);
+		}
+
+		System.out.println("===== For each =====");
+		
+		for (String name : PersonName) {
+			System.out.println(name);
+		}
+		
+	}
+}

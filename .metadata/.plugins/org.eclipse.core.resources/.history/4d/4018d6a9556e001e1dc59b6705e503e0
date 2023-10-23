@@ -1,0 +1,20 @@
+package com.oop;
+
+class Manager { // Parent class
+	/*
+	 	// inheritance 
+	 	 1. inheritance atau pewarisan adalah kemampuan untuk menurunkan sebuah class ke class lain 
+	 	 2. Dalam artian 
+	 */
+	
+	String name; 
+	
+	void sayHello(String name) {
+		System.out.println("Hello " + name + ", my name is " + this.name  );
+	}
+}
+
+class viceManager extends Manager{ // child class
+	Manager demo = new Manager();
+	demo.name = "Sugilar";
+}

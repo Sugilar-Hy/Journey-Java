@@ -1,0 +1,25 @@
+package com.tutorial;
+
+public class MethodFunction {
+	public static void main(String[] args) {
+		sayToMe();
+		nameArray();
+		
+	}
+	
+	static void sayToMe() {
+		System.out.println("Halo semua");
+	}
+	
+	static void nameArray() {
+		String[] name = new String[] {
+			"Sugilar", "Hilma", "Siti",
+			"Dori", "Angga", "Heliab"
+		};
+		
+		for(String pName : name) {
+			System.out.println(pName);
+		}
+		
+	}
+}

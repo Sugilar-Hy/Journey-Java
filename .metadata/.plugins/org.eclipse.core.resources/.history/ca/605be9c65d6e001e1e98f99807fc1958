@@ -1,0 +1,18 @@
+package com.inheritence;
+
+public class viceManager extends Manager { // class child from class parent Manager 
+	// method overriding 
+	/*
+	 	// Method overriding 
+	 	 1. mehtod overriding adalah kemampuan mendeklarasikan ulang method di child class, yang sudah ada di dalam parent class
+	 	 2. Saat kita mulakukan proses overiding tersebut, secara otomatis kita membuat object dari class child, metho yang ada di class parent 
+	 	 tidak bisa di akses lagi
+	 	 *
+	 */
+	
+	void sayHello(String name) { // method overridng
+		System.out.println("Hello " + name + ", my name is vp" + this.name  );
+	}
+	
+	
+}

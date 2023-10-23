@@ -1,0 +1,9 @@
+package com.inheritence;
+
+public class VisePresident extends Manager{
+	
+	void sayHello(String name) { // method overriding
+		System.out.println("Hello " + name + ", my name is Manager" + this.name  );
+	}
+	
+}

@@ -1,0 +1,92 @@
+public class ToDoListApp{
+	
+	// model apk
+	public static String[] data = new String[10];
+	
+	// main function 
+	public static void main(String[] args) {
+		testShowToDo();
+		testAddTodo();
+	}
+	
+	/*
+	 * businnus logic
+	 */ 
+	
+	// menampilkan to do list
+	public static void showToDo() {
+		for(int i = 0 ; i < data.length ; i++) {
+			String todo = data[i];
+			int no = i + 1;
+			
+			if(todo != null){
+				System.out.println(no + ". " + todo);
+			}
+		}
+	}
+	
+	// test show to do list 
+	public static void testShowToDo() {
+		data[0] = "Belajar Java dasar";
+		data[1] = "Study casus java dasar : aplikasi to do list";
+		data[2] = "Belajar OOP Java";
+		showToDo();
+	}
+	
+	// menambahkan to do list
+	public static void addToDo(String todo) {
+		// cek  apakah data penuh 
+		boolean isFull = true ;
+		for(int i = 0 ; i < data.length ; i++) {
+			isFull = false ;
+			break;
+		}
+		
+		if(isFull) {
+			String[] temp = data;
+			data = new String[data.length * 2];
+			
+			for(int i = 0 ; i < temp.length ; i++) {
+				data[i] = temp[i];
+			}
+		}
+		
+		for(int i = 0 ; i < data.length ; i++) {		
+			// menambahkan list to do list 
+			if(data[i] == null ) {
+				data[i] = todo ;
+				break;
+			}
+		}
+	}
+	
+	
+	//  test menambahakan to do list
+	public static void testAddTodo() {
+	
+	}
+	
+	// mengahapus to do list
+	public static void removeToDo() {
+		
+	}
+	
+	/*
+	 * menentukan view/ screen 
+	 */
+	
+	// menampilkan screen list to do list
+	public static void viewShowToDo() {
+		
+	}
+	
+	// menampilkan screen add to do list
+	public static void viewAddShowToDo() {
+		
+	}
+	
+	// menampilkan screen remove to do list
+	public static void viewRmToDo() {
+		
+	}
+}

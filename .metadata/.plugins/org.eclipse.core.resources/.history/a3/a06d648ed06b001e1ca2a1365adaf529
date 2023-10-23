@@ -1,0 +1,33 @@
+package com.tutorial;
+
+public class SwitchStatement {
+	public static void main(String[] args) {
+		/*
+		  // switch statement
+		   * kadang kita hanya butuh menggunakan kondisi sederhana di if statement, 
+		   * seperti menggunakan perbandingan ==
+		   *
+		   * Switch adalah statement percabangan yang sama dengan if, namun lebih sederhana cara pembuatanya
+		   *
+		   * Kondisi di Switch statement hanya unutk perbandinagn ==
+		 * */
+		
+		String nilai = "A";
+		
+		switch (nilai) {
+		case "A":
+			System.out.println("Selamat anda lulus dengan nilai A");
+		break;
+		case "B":
+		case "C":
+			System.out.println("Selamat anda lulus dengan nilai B");
+		break;
+		case "D":
+			System.out.println("Selamat anda lulus dengan nilai C");
+		break; 
+		default :
+			System.out.println("Sepetinya anda salah jurusan");
+		
+		}
+	}
+}

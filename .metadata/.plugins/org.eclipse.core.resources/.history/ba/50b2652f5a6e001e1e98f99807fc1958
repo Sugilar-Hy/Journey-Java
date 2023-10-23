@@ -1,0 +1,17 @@
+package com.inheritence;
+
+public class ManagerApp {
+	public static void main(String[] args) {
+		
+		viceManager vm = new viceManager();
+		vm.name = "Ardi sugilar";
+		vm.sayHello("Joko");
+		
+		Manager mnr = new Manager();
+		mnr.name = "Hilma fatmawati";
+		mnt.sayHello("athia fahriaya");
+		
+		
+	}
+
+}

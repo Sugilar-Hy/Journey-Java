@@ -1,0 +1,58 @@
+public class ToDoListApp {
+	
+	public static String[] myArray = new String[20];
+	
+	public static void main(String[] args) {
+		testshowToDoList();
+	
+	}
+	
+	
+	// menentukan businuss logic dengan method
+	// show the list to do list
+	public static void showToDoList() {
+		for(int i = 0 ; i < myArray.length ; i++) {
+			String todo = myArray[i];
+			int no = i + 1;
+			
+			if(todo != null) {
+				System.out.println(no + "." + todo);
+			}
+		}
+	}
+	
+	public static void testshowToDoList() {
+		myArray[0] = "I love logic";
+		myArray[1] = "Belajar Java dasar";
+		myArray[2] = "Study kasus : To Do List";
+		showToDoList();
+	}
+	
+	// menambahkan logic penambahan list 
+	public static void addTodoList() {
+		
+	}
+	
+	// menghapus list to do list
+	public static void rmToDoList() {
+		
+	}
+	
+	
+	// view 
+	// menampilkan view to do list
+	public static void viewToDoList(){
+	
+	}
+	
+	// menampikan view tampbah to do list 
+	public static void viewAddToDoList(){
+		
+	}
+	
+	// menampilkan view remove
+	public static void viewRmToDoList() {
+		
+	}
+	
+}

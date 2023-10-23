@@ -1,0 +1,31 @@
+package com.tutorial;
+
+public class BreakContinue{
+	public static void main(String[] args) {
+		/*
+		 	// Break & Continue 
+		 	 * Break digunakan untuk menghentikan perulangan
+		 	 * Continue digunakan untuk menghentikan perulangan saat ini, lalu dilanjutkan ke perulangan selanjutnya
+		 * */
+		
+//		// kata kunci break
+//		int counter = 0;
+//		while(true) {
+//			System.out.println("Perulngan tak terhingga" + counter);
+//			counter++;
+//			
+//			if(counter > 100) {
+//				break;
+//			}
+//		}
+		
+		// kata kunci continue
+		for (int i = 0 ; i <= 100 ; i++) {
+			if (i % 2 == 0) {
+					continue;
+			}
+		}
+		
+	
+	}
+}

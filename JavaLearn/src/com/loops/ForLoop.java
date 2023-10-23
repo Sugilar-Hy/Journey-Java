@@ -1,0 +1,20 @@
+package com.loops ;
+
+public class ForLoop{
+	public static void main(String[] args) {
+		// materi perulangan 
+		// for loop
+		
+		/*
+		  for(init Statement; kondisi ; post statement){
+		  	// block execute
+		  }
+		 */
+		
+		String txt = "Kamu orang ke";
+		int i = 0 ;
+		for (i = 0 ; i <= 10 ; i++) {
+			System.out.println(txt + " " + i);
+		}
+	}
+}

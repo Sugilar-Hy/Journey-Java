@@ -1,0 +1,39 @@
+package com.oop;
+
+public class PersonApp {
+	public static void main(String[] args) {
+		
+		// person andri 
+		var andri = new Person();
+		andri.name = "andri wicaksono";
+		andri.address = "Mahkota agung";
+		
+		System.out.println(andri.name);
+		System.out.println(andri.address);
+		
+		System.out.println("==========");
+		
+		// person jesika
+		Person jesika = new Person();
+		jesika.name = "Jesika nurwaidah";
+		jesika.address = "Cityzen";
+		
+		System.out.println(jesika.name);
+		System.out.println(jesika.address);
+		System.out.println(jesika.country);
+		
+		System.out.println("==========");
+		
+		Person maulana = new Person();
+		maulana.name = "Maulana diningrat";
+		maulana.address = "Cianjur";
+		
+		System.out.println(maulana.name);
+		System.out.println(maulana.address);
+		
+		Person jefri;
+		jefri = new Person();
+		
+		
+	}
+}

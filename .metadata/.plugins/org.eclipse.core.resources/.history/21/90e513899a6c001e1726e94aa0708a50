@@ -1,0 +1,11 @@
+package com.tutorial;
+
+public class MethodFunction {
+	public static void main(String[] args) {
+		sayToMe();
+	}
+	
+	static void sayToMe() {
+		System.out.println("Halo semua");
+	}
+}
